@@ -1,0 +1,14 @@
+{% extends "gameboxdApp/layout.html" %}
+
+{% block title %} GameBoxd {% endblock %}
+
+{% block content %} 
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to GameBoxd</h1>
+        <p class="lead">Manage your game reviews here!</p>
+        <hr class="my-4">
+        <p>Use the navigation bar to add or view your games!</p>
+        <a href="{% url 'gameList' %}" class="btn btn-primary btn-large">View Games</a>
+    </div>
+{% endblock %}
+
